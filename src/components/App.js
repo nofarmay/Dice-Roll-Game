@@ -1,15 +1,16 @@
 import React from "react";
 import Card from "./Card"
 // import Main from "./Main"
+import "./components/App.css";
 
 function App() {
-// const reset = () =>{ 
-//   {player1current:0,
-//   player2current:0,
-//   player1score:0,
-//   player2score:0,
-//   isHold:true,
-// }}
+const [lastroll,setlastroll] =React.useState({
+  player1current:0,
+  player2current:0,
+  player1score:0,
+  player2score:0,
+  isHold:true,
+})
 // const [gameOn,winnerDecleration] = useState()
 const func = () =>{ 
  const dice =[Math.floor(Math.random()*6)+1, Math.floor(Math.random()*6)+1]
@@ -76,17 +77,19 @@ const hold = () => {
   })
   }
 }
+// const checkroll = () =>
+//  {if dice1 === 6 && dice2 === 6 {hold} else }
 
-const sam = function (latest,current){
-  if (({lasttest}+{current})>100){
-    winnerDecleration;
-    console.log('__ is the winner');
-    return;
-  } else{
-    gameOn,
-    console.log('__ turn');
-  } 
-}; 
+// const sam = function (latest,current){
+//   if (({lasttest}+{current})>100){
+//     winnerDecleration;
+//     console.log('__ is the winner');
+//     return;
+//   } else{
+//     gameOn,
+//     console.log('__ turn');
+//   } 
+// }; 
 
 return (
     <div>
