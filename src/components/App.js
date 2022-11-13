@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card"
 // import Main from "./Main"
-import "./components/App.css";
+// import "./components/App.css";
 
 function App() {
 const [lastroll,setlastroll] =React.useState({
